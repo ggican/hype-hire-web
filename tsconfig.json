@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@import/*": ["./src/*"]
+      "@import/*": ["./src/*"],
+      "@tailwind/theme": ["./tailwind.config.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

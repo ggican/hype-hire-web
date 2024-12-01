@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gradient-blue: linear-gradient(151.17deg, #26c2b9 8.69%, #288be7 126.06%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +17,8 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  /* background: var(--background); */
 }
 
 @layer utilities {
