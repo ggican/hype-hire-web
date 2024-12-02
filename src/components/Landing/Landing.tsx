@@ -1,3 +1,5 @@
+'use client';
+
 import Advantages from '@import/components/Advantages';
 import CardJob from '@import/components/CardJob';
 import { TCardJobProps } from '@import/components/CardJob/CardJob';
@@ -9,17 +11,18 @@ import Slider from '@import/components/Slider';
 import Tooltip from '@import/components/Tooltip';
 import Image from 'next/image';
 import Link from 'next/link';
-import { headers } from 'next/headers';
 import { TCardProfileProps } from '@import/components/CardProfile/CardProfile';
 import { TAdvantagesProps } from '@import/components/Advantages/Advantages';
 
-const Landing = async () => {
-  const headersList = headers();
-  const domain = headersList.get('x-forwarded-host') || '';
-  const protocol = headersList.get('x-forwarded-proto') || '';
-  const res = await fetch(`${protocol}://${domain}/api/content`);
-  const data = await res.json();
-
+const Landing = ({
+  data,
+}: {
+  data: {
+    userList: TCardProfileProps[];
+    cardJob: TCardJobProps[];
+    advantages: TAdvantagesProps[];
+  };
+}) => {
   const { userList, advantages, cardJob } = data;
 
   return (

@@ -4,7 +4,7 @@ import CardProfile from './CardProfile'; // Adjust the import path based on your
 
 // Define the metadata for the story
 const meta: Meta<typeof CardProfile> = {
-  title: 'Molecules/CardProfile', // This is the category and name for the story
+  title: 'Molecules/Card Profile', // This is the category and name for the story
   component: CardProfile,
   tags: ['autodocs'],
 } satisfies Meta<typeof CardProfile>;

@@ -4,7 +4,7 @@ import CardService from './CardService'; // Adjust the import path based on your
 
 // Define the metadata for the story
 const meta: Meta<typeof CardService> = {
-  title: 'Molecules/CardService', // This is the category and name for the story
+  title: 'Molecules/Card Service', // This is the category and name for the story
   component: CardService,
   tags: ['autodocs'],
 } satisfies Meta<typeof CardService>;
@@ -14,7 +14,7 @@ export default meta;
 // Define the default story for the Tag component
 type Story = StoryObj<typeof meta>;
 
-export const CardGear: Story = {
+export const CardServiceGear: Story = {
   args: {
     padding: 'p-[32px]',
     icon: 'gear',
@@ -22,7 +22,7 @@ export const CardGear: Story = {
   },
 };
 
-export const CardCode: Story = {
+export const CardServiceCode: Story = {
   args: {
     padding: 'p-[16px]',
     icon: 'code',

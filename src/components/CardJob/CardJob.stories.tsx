@@ -4,7 +4,7 @@ import CardJob from './CardJob'; // Adjust the import path based on your file st
 
 // Define the metadata for the story
 const meta: Meta<typeof CardJob> = {
-  title: 'Molecules/CardJob', // This is the category and name for the story
+  title: 'Molecules/Card Job', // This is the category and name for the story
   component: CardJob,
   tags: ['autodocs'],
 } satisfies Meta<typeof CardJob>;
@@ -14,7 +14,7 @@ export default meta;
 // Define the default story for the Tag component
 type Story = StoryObj<typeof meta>;
 
-export const CardCode: Story = {
+export const CardJobCode: Story = {
   args: {
     icon: 'code',
     title: '외국인 원격 채용 (비개발)',
