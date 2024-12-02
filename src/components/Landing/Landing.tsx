@@ -56,11 +56,10 @@ const Landing = ({
                       </h1>
                     </Tooltip>
                     <div className="flex lg:flex-col animate-fade-in-up mt-[16px]">
-                      <p className="text-[#FFFFFFE5]  leading-[34px] font-extrabold  lg:text-[24px] text-[18px] ">
-                        법률 및 인사관리 부담없이
-                      </p>
-                      <p className="text-[#FFFFFFE5]leading-[34px] font-extrabold  lg:text-[24px] text-[18px]">
-                        1주일 이내에 원격으로 채용해보세요.
+                      <p
+                        style={{ direction: 'rtl' }}
+                        className="text-[#FFFFFFE5]  leading-[34px] lg:indent-[200px]  text-left lg:w-[90%] font-extrabold text-inde lg:text-[24px] text-[18px] ">
+                        법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
                       </p>
                     </div>
                     <p className="hidden lg:block font-extrabold text-[#FFFFFFE5] animate-fade-in-up leading-[27px] text-[18px] mt-[24px] underline">
