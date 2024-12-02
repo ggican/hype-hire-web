@@ -1,6 +1,8 @@
 import type { FC } from 'react';
 
-const Advantages: FC<{ title: string; desc: string }> = ({ title, desc }) => {
+export type TAdvantagesProps = { title: string; desc: string };
+
+const Advantages: FC<TAdvantagesProps> = ({ title, desc }) => {
   return (
     <div className="flex flex-col">
       <div className="h-[1px] w-[70%] bg-[#fff]"></div>

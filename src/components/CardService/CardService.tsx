@@ -4,14 +4,14 @@ import { IconKeys } from '@import/components/Icon/Icon.types';
 import Link from 'next/link';
 import type { FC } from 'react';
 
-export type TCardProfileProps = {
+export type TCardServiceProps = {
   icon: IconKeys;
   title: string;
   padding?: string;
   shadow?: boolean;
 };
 
-const CardService: FC<TCardProfileProps> = ({ icon, padding = 'p-[16px]', shadow = false }) => {
+const CardService: FC<TCardServiceProps> = ({ icon, padding = 'p-[16px]', shadow = false }) => {
   return (
     <Card data-testid="card-service" shadow={shadow} padding={padding}>
       <div className="w-[40px] inline-flex bg-[#EFF1F6] rounded-[8px] h-[40px] items-center justify-center">
