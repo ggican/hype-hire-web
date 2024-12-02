@@ -65,7 +65,7 @@ const Landing = async () => {
                     </p>
                   </div>
                   <div className="hidden grid-cols-3 gap-x-[43px] mt-[60px] animate-fade-in lg:grid ">
-                    {advantages?.map((item: TAdvantagesProps, key: any) => {
+                    {advantages?.map((item: TAdvantagesProps, key: number) => {
                       return (
                         <div key={key} className="inline-flex flex-col">
                           <Advantages {...item} />
