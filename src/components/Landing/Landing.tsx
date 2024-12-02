@@ -49,7 +49,7 @@ const Landing = () => {
             <div className="container relative z-10">
               <div className="grid lg:grid-cols-2 lg:flex-row flex-col">
                 <div className="inline-flex flex-col w-[auto]">
-                  <div className="flex w-full flex-col">
+                  <div className="flex w-full flex-col mb-[16px]">
                     <Tooltip
                       className="lg:!bg-white !bg-[#8BC4FF] animate-fade-in-delay"
                       tooltip={
@@ -59,14 +59,19 @@ const Landing = () => {
                       }
                       noHover
                       arrowPlacement="bottom-left">
-                      <h1 className="text-white leading-[62px] lg:text-[48px] text-[36px] animate-fade-in-up">
+                      <h1 className="text-[#FFFFFFE5] leading-[62px] font-extrabold lg:text-[48px] text-[36px] animate-fade-in-up">
                         최고의 실력을 가진 외국인 인재를 찾고 계신가요?
                       </h1>
                     </Tooltip>
-                    <h2 className="text-[#FFFFFFE5] leading-[34px] lg:text-[24px] text-[18px] animate-fade-in-up">
-                      법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
-                    </h2>
-                    <p className="hidden lg:block text-[#FFFFFFE5] animate-fade-in-up leading-[27px] text-[18px] mt-[24px] underline">
+                    <div className="flex lg:flex-col animate-fade-in-up mt-[16px]">
+                      <p className="text-[#FFFFFFE5]  leading-[34px] font-extrabold  lg:text-[24px] text-[18px] ">
+                        법률 및 인사관리 부담없이
+                      </p>
+                      <p className="text-[#FFFFFFE5]leading-[34px] font-extrabold  lg:text-[24px] text-[18px]">
+                        1주일 이내에 원격으로 채용해보세요.
+                      </p>
+                    </div>
+                    <p className="hidden lg:block font-extrabold text-[#FFFFFFE5] animate-fade-in-up leading-[27px] text-[18px] mt-[24px] underline">
                       개발자가 필요하신가요?
                     </p>
                   </div>

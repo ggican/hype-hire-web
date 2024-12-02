@@ -11,7 +11,8 @@
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_1d68df0f266ac04"
   },
   "dependencies": {
     "@next/third-parties": "^15.0.3",
@@ -36,6 +37,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
+    "chromatic": "^11.19.0",
     "eslint": "^8",
     "eslint-config-next": "^14.2.18",
     "eslint-config-prettier": "^9.1.0",
