@@ -17,13 +17,13 @@ type Story = StoryObj<typeof meta>;
 export const SliderDefault: Story = {
   args: {
     children: [
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={0} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={2} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={3} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={1} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={4} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={5} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={5} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
     ],
   },
 };
@@ -32,13 +32,13 @@ export const SliderInterval: Story = {
   args: {
     duration: 1000,
     children: [
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
-      <CardJob icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={0} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={2} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={3} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={1} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={4} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={5} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
+      <CardJob key={5} icon="gear" title="외국인 원격 채용 (비개발)"></CardJob>,
     ],
   },
 };

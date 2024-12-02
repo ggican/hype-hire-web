@@ -1,4 +1,3 @@
-import Card from '@import/components/Card';
 import CardService from '@import/components/CardService';
 import Icon from '@import/components/Icon';
 import classNames from 'classnames';

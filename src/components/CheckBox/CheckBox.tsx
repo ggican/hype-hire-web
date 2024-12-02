@@ -1,6 +1,5 @@
 import Icon from '@import/components/Icon';
-import classNames from 'classnames';
-import type { FC, ReactNode } from 'react';
+import type { FC } from 'react';
 
 const CheckBox: FC<{ label: string }> = ({ label }) => {
   return (

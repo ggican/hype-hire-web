@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { useMemo, useState } from 'react';
 
-import { ColorsKeys, IconKeys, IconSize, tailwindConfigColors } from './Icon.types';
+import { ColorsKeys, IconKeys, IconProps, IconSize, tailwindConfigColors } from './Icon.types';
 import { iconsList } from './IconList';
 
 import Icon from '.';
@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 const allIcon: IconKeys[] = Object.keys(iconsList) as IconKeys[];
 const allColor: ColorsKeys[] = Object.keys({ ...tailwindConfigColors }) as ColorsKeys[];
 
-const GetElementIcon = ({ iconName, args }: any) => {
+const GetElementIcon = ({ iconName, args }: { iconName: IconKeys; args: IconProps }) => {
   const [copied, setCopied] = useState(false);
   return (
     <div

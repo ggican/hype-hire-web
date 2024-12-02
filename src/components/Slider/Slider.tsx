@@ -25,7 +25,7 @@ const Slider: React.FC<TSliderProps> = ({ children, duration = 5000 }) => {
 
     // Cleanup on unmount
     return () => clearInterval(interval);
-  }, [items.length]);
+  }, [items.length, duration]);
 
   return (
     <div className="flex w-full mt-[60px] relative z-10">

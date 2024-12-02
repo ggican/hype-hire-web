@@ -1,7 +1,5 @@
-import Card from '@import/components/Card';
 import Icon from '@import/components/Icon';
 import { IconKeys } from '@import/components/Icon/Icon.types';
-import Link from 'next/link';
 import type { FC } from 'react';
 
 export type TCardJobProps = {

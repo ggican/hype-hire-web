@@ -3,7 +3,7 @@ import Card from '@import/components/Card';
 import Icon from '@import/components/Icon';
 import { IconKeys } from '@import/components/Icon/Icon.types';
 import Tag from '@import/components/Tag';
-import type { FC, ReactNode } from 'react';
+import type { FC } from 'react';
 
 export type TCardProfileProps = {
   padding?: string;
@@ -46,8 +46,8 @@ const CardProfile: FC<TCardProfileProps> = ({ padding = 'p-[16px]', avatar, name
 
       {/* Card Footer */}
       <div className="flex-wrap flex justify-center items-center w-full gap-x-4 gap-y-1 p-[8px]">
-        {skills?.map((item) => {
-          return <Tag>{item}</Tag>;
+        {skills?.map((item, key: number) => {
+          return <Tag key={key}>{item}</Tag>;
         })}
       </div>
     </Card>

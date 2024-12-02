@@ -19,7 +19,7 @@ export const CardCode: Story = {
     icon: 'code',
     title: '외국인 원격 채용 (비개발)',
   },
-  render: (args: any) => {
+  render: (args) => {
     return (
       <div className="bg-blue-300 p-[10px]">
         <CardJob {...args}></CardJob>

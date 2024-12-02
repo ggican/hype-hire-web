@@ -1,6 +1,4 @@
-import { IconProps } from '@import/components/Icon/Icon.types';
-
-const ICLogo = ({ size = 'md', color = 'grey-dark' }: IconProps): JSX.Element => {
+const ICLogo = (): JSX.Element => {
   return (
     <svg width="114" height="21" viewBox="0 0 114 21" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_10811_40)">

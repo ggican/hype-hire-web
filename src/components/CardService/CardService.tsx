@@ -11,7 +11,7 @@ export type TCardProfileProps = {
   shadow?: boolean;
 };
 
-const CardService: FC<TCardProfileProps> = ({ icon, title, padding = 'p-[16px]', shadow = false }) => {
+const CardService: FC<TCardProfileProps> = ({ icon, padding = 'p-[16px]', shadow = false }) => {
   return (
     <Card data-testid="card-service" shadow={shadow} padding={padding}>
       <div className="w-[40px] inline-flex bg-[#EFF1F6] rounded-[8px] h-[40px] items-center justify-center">

@@ -2,7 +2,7 @@
 
 import Icon from '@import/components/Icon';
 import classNames from 'classnames';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 type CarouselProps = {
   autoPlayInterval?: number; // Optional interval for auto-play
@@ -13,26 +13,27 @@ type CarouselProps = {
 const Carousel: React.FC<CarouselProps> = ({ autoPlayInterval = 0, children, arrowColor = '#000' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to go to the next slide
-  const nextSlide = () => {
+  // Wrap nextSlide function with useCallback to prevent unnecessary re-renders
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % children.length);
-  };
+  }, [children.length]);
 
-  // Function to go to the previous slide
-  const prevSlide = () => {
+  // Wrap prevSlide function with useCallback to prevent unnecessary re-renders
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? children.length - 1 : prevIndex - 1));
-  };
+  }, [children.length]);
 
   useEffect(() => {
-    let interval = null;
+    let interval: NodeJS.Timeout | null = null;
     if (autoPlayInterval >= 100) {
       interval = setInterval(nextSlide, autoPlayInterval);
     }
     return () => {
-      if (autoPlayInterval >= 100 && interval) {
-        clearInterval(interval); // Cleanup interval on unmount
+      if (interval) {
+        clearInterval(interval); // Cleanup interval on unmount or autoPlayInterval change
       }
     };
+    // eslint-disable-next-line
   }, [autoPlayInterval]);
 
   return (
