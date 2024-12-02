@@ -27,7 +27,9 @@ const Footer: FC<{ fixed?: boolean }> = ({ fixed }) => {
           </div>
         </div>
 
-        <div date-testid="footer-bottom" className="grid lg:grid-cols-10 grid-cols-2 lg:gap-2 gap-y-[36px] gap-x-2 w-full">
+        <div
+          date-testid="footer-bottom"
+          className="grid lg:grid-cols-10 grid-cols-2 lg:gap-2 gap-y-[36px] gap-x-2 w-full">
           <div className="lg:col-span-2 ">
             <p className="font-extrabold text-[12px] leading-[21px] text-[#343741] mb-[18px] mt-[16px]">상호명</p>
             <p className="text-[#5E626F] font-extrabold text-[13px] leading-[20px] mb-[8x]">하이퍼하이어</p>

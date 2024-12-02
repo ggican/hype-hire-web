@@ -28,7 +28,6 @@ export const TopTooltip: Story = {
     tooltip: 'Tooltip placed at the top.',
     placement: 'top',
     arrowPlacement: 'bottom-center',
-
   },
 };
 

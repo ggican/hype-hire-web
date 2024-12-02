@@ -52,7 +52,7 @@ const Tooltip: FC<TooltipProps> = ({
   return (
     <div data-testid="tooltip-test-id" className="relative flex w-full items-center group">
       {/* Target Element */}
-      <span className='w-full flex'>{children}</span>
+      <span className="w-full flex">{children}</span>
 
       {/* Tooltip */}
       <div
