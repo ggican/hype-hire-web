@@ -26,3 +26,18 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom CSS for Infinite Running Text Effect */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply the animation */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
