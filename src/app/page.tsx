@@ -8,5 +8,5 @@ export default async function Home() {
   const res = await fetch(`${protocol}://${domain}/api/content`);
   const data = await res.json();
 
-  return <Landing {...data}></Landing>;
+  return <Landing data={data}></Landing>;
 }

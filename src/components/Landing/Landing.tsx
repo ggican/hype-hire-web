@@ -23,7 +23,7 @@ const Landing = ({
     advantages: TAdvantagesProps[];
   };
 }) => {
-  const { userList, advantages, cardJob } = data;
+  const { userList = [], advantages = [], cardJob = [] } = data;
 
   return (
     <section className="w-full">
